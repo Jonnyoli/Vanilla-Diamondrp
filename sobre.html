@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre Nós - Vanilla Unicorn</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .wrapper {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .conteudo {
+      flex: 1;
+      padding: 20px;
+    }
+
+   footer {
+      background: linear-gradient(to right, #111, #222);
+      padding: 20px;
+      text-align: center;
+      color: #ff4081;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      box-shadow: 0 -2px 12px rgba(255, 64, 129, 0.3);
+      position: relative;
+    }
+
+    footer::before, footer::after {
+      content: "★";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #ff4081;
+      font-size: 1.2rem;
+      opacity: 0.6;
+    }
+
+    footer::before {
+      left: 20px;
+    }
+
+    footer::after {
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="logo">Vanilla Unicorn</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html" class="active">Sobre</a></li>
+          <li><a href="preco.html">Preçário</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="candidaturas.html">Candidata-te</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+     <div class="logo"> Sobre Nós</div>
+</section>
+ <section class="conteudo" text-aling="center">
+     <p class="neon-text"> Localizado no coração de Diamond, o Vanilla Unicorn é o clube noturno mais icónico </p> 
+     <p class="neon-text"> e extravagante do universo. Conhecido pelo ambiente vibrante e exclusivo,</p>
+     <p class="neon-text"> este bar e clube de strip atrai uma clientela variada, desde empresários a criminosos de renome da cidade.</p>
+
+     <p class="neon-text"> O Vanilla Unicorn destaca-se pelo seu interior luxuoso, música envolvente e pelas suas </p>
+     <p class="neon-text">dançarinas talentosas, tornando-o o local perfeito para descontrair e esquecer os problemas do dia a dia. </p> 
+    <p class="neon-text">Seja para uma noite de festa, encontros discretos ou simplesmente para desfrutar de um bom</p>
+   <p class="neon-text"> espetáculo, este clube oferece uma experiência única e memorável.</p>
+   <p class="neon-text">Para além do entretenimento ao vivo, o Vanilla Unicorn conta com um bar bem abastecido, </p>
+  <p class="neon-text">onde os clientes podem desfrutar de uma grande variedade de bebidas, desde cocktails </p>
+  <p class="neon-text">sofisticados até shots fortes para os mais aventureiros. O clube também dispõe de áreas VIP,</p>
+  <p class="neon-text"> garantindo um atendimento exclusivo para quem procura um tratamento mais especial.</p>
+ <p class="neon-text">Mais do que um simples clube, o Vanilla Unicorn tornou-se um ponto de referência na cidade, </p>
+ <p class="neon-text">sendo um local de negócios obscuros e reuniões entre figuras importantes do submundo de </p>
+<p class="neon-text">Diamond. Seja qual for a razão da visita, uma coisa é certa: uma noite no Vanilla Unicorn nunca é esquecida!</p>
+<p class="neon-text">Visita-nos e descobre porque somos o melhor clube da cidade!</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Vanilla Unicorn Atlantic. Todos os direitos reservados - Smurf Oliveira &copy;</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serviços - Vanilla Unicorn</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('fundo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper {
+  flex: 1;
+  padding-bottom: 60px; /* Espaço extra antes do footer */
+}
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #ff69b4;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.1em;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      color: #ff69b4;
+    }
+
+    h2 {
+      font-size: 3em;
+      margin: 40px 0 20px;
+      color: #ff69b4;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .centro {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-section {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .service-section:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .service-section h3 {
+      font-size: 1.8em;
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+
+    .service-section p {
+      font-size: 1.1em;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 2.2em;
+      }
+
+    }
+
+footer {
+      background: linear-gradient(to right, #111, #222);
+      padding: 20px;
+      text-align: center;
+      color: #ff4081;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      box-shadow: 0 -2px 12px rgba(255, 64, 129, 0.3);
+      position: relative;
+    }
+
+    footer::before, footer::after {
+      content: "★";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #ff4081;
+      font-size: 1.2rem;
+      opacity: 0.6;
+    }
+
+    footer::before {
+      left: 20px;
+    }
+
+    footer::after {
+      right: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Vanilla Unicorn</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="preco.html">Preçário</a></li>
+        <li><a href="servicos.html" class="active">Serviços</a></li>
+        <li><a href="candidaturas.html">Candidata-te</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+   
+ <div class="logo"> Serviços</div>
+
+    <section class="centro">
+
+      <div class="service-section">
+        <h3>ENCOMENDAS</h3>
+        <p>O nosso estabelecimento encontra-se também disponível para encomenda de bebidas/comida. Entre em contacto connosco para informações de custos, estamos disponíveis para fazer o devido orçamento para a sua encomenda.</p>
+      </div>
+
+      <div class="service-section">
+        <h3>MÚSICA & DJ AO VIVO</h3>
+        <p>Sets exclusivos de DJs locais e internacionais, criando a atmosfera perfeita para uma noite inesquecível.</p>
+      </div>
+
+      <div class="service-section">
+        <h3>PACOTE GRUPOS & EMPRESAS</h3>
+        <p>Opções especiais para festas corporativas e eventos privados.</p>
+      </div>
+
+      <div class="service-section">
+        <h3>SERVIÇO DE CATERING</h3>
+        <p>Serviço de catering disponível para festas, casamentos e eventos. Contacte-nos para orçamento.</p>
+      </div>
+
+      <div class="service-section">
+        <h3>FESTAS & EVENTOS PRIVADOS</h3>
+        <p>Organização de festas exclusivas, aniversários e despedidas de solteiro com pacotes personalizados.</p>
+      </div>
+
+      <div class="service-section">
+        <h3>TRANSPORTE VIP</h3>
+        <p>Para garantir que os clientes cheguem e saiam com total segurança e conforto.</p>
+      </div>
+
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Vanilla Unicorn Diamond RP. Todos os direitos reservados - SMURF OLIVEIRA &copy;</p>
+  </footer>
+
+</body>
+</html>

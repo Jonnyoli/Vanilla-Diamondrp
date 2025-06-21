@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Início - Vanilla Unicorn</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Sticky footer layout */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper {
+      flex: 1;
+      padding: 20px;
+    }
+
+    footer {
+      background: linear-gradient(to right, #111, #222);
+      padding: 20px;
+      text-align: center;
+      color: #ff4081;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      box-shadow: 0 -2px 12px rgba(255, 64, 129, 0.3);
+      position: relative;
+    }
+
+    footer::before, footer::after {
+      content: "★";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #ff4081;
+      font-size: 1.2rem;
+      opacity: 0.6;
+    }
+
+    footer::before {
+      left: 20px;
+    }
+
+    footer::after {
+      right: 20px;
+    }adding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"> Vanilla Unicorn</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="preco.html">Preçário</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="candidaturas.html">Candidata-te</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <div class="wrapper">
+  <section class="info-direita">
+    <div class="logo">Bem-vindo ao Vanilla Unicorn</div>
+    <p class="neon-text">Luxo, exclusividade e entretenimento em Diamond RP.</p>
+  </section>
+
+  <!-- Section encostada à direita -->
+  <section class="info-direita">
+    <p class="neon-text">Vanilla Unicorn é verdadeiramente o local de entretenimento adulto mais opulento </p>
+    <p class="neon-text">e confortável de Diamond. A partir do momento em que você passa pela entrada principal e</p>
+    <p class="neon-text">entra no nosso deslumbrante bar, perceberás que terás a melhor noite de sempre.</p>
+    <p class="neon-text">Serviços e comodidades inacreditáveis, bonitos, opulentos, acolhedores, confortáveis ​​e incomparáveis </p>
+    <p class="neon-text">​​- essas são apenas algumas maneiras de descrever o mundo verdadeiramente notável em que entrou. </p>
+    <p class="neon-text">Convidamos-vos a descobrir e vivenciar tudo o que um verdadeiro clube de cavalheiros pode ser. ​</p>
+    <p class="neon-text">Vanilla Unicorn é o clube de cavalheiros mais mexido de Atlantic e uma experiência imperdível! Não poupamos despesas na criação do clube de cavalheiros mais agradável, luxuoso e íntimo do mundo.</p>
+    <p class="neon-text">Visite-nos e comprove você mesmo</p>
+  </section>
+</div>
+
+
+  <footer>
+    <p>&copy; 2025 Vanilla Unicorn Diamond RP. Todos os direitos reservados - SMURF OLIVEIRA &copy;</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

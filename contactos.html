@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contactos - Vanilla Unicorn</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html, body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.05);
+      margin: 40px auto;
+      max-width: 700px;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(255, 64, 129, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    section h2 {
+      font-size: 2.3rem;
+      color: #ff4081;
+      margin-bottom: 30px;
+      text-shadow: 0 0 10px #ff4081;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 64, 129, 0.1);
+      transition: background 0.3s;
+    }
+
+    section p:hover {
+      background: #ff4081;
+      color: #111;
+      font-weight: bold;
+      transform: scale(1.02);
+    }
+
+    footer {
+      background: linear-gradient(to right, #111, #222);
+      padding: 20px;
+      text-align: center;
+      color: #ff4081;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      box-shadow: 0 -2px 12px rgba(255, 64, 129, 0.3);
+      position: relative;
+    }
+
+    footer::before, footer::after {
+      content: "★";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #ff4081;
+      font-size: 1.2rem;
+      opacity: 0.6;
+    }
+
+    footer::before {
+      left: 20px;
+    }
+
+    footer::after {
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Vanilla Unicorn</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="preco.html">Preçário</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="candidaturas.html">Candidata-te</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contactos.html" class="active">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>💬 Fala Connosco</h2>
+      <p class="neon-text">📧 Email: <strong>vanillaunicorn@diamondrp.pt</strong></p>
+      <p class="neon-text">📞 Telefone: <strong>+351 914 546 353</strong></p>
+      <p class="neon-text">📍 Morada: <strong>Avenida Luxúria, 69 - Diamond</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vanilla Unicorn Diamond RP. Todos os direitos reservados - SMURF OLIVEIRA &copy;</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

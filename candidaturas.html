@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Candidata-te - Vanilla Unicorn</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .formulario {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #ff4081aa;
+      max-width: 800px;
+      margin: 40px auto;
+    }
+
+    .formulario h2 {
+      color: #ff4081;
+      margin-bottom: 25px;
+      text-align: center;
+      font-size: 2.2rem;
+      text-shadow: 0 0 10px #ff4081;
+    }
+
+    .formulario label {
+      color: #fff;
+      font-weight: bold;
+      margin-top: 15px;
+      display: block;
+    }
+
+    .formulario input,
+    .formulario textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      backdrop-filter: blur(5px);
+    }
+
+    .formulario textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .formulario button {
+      background-color: #ff4081;
+      color: #111;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    .formulario button:hover {
+      background-color: #e03370;
+    }
+
+    #mensagem {
+      text-align: center;
+      color: #fff;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+footer {
+      background: linear-gradient(to right, #111, #222);
+      padding: 20px;
+      text-align: center;
+      color: #ff4081;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      box-shadow: 0 -2px 12px rgba(255, 64, 129, 0.3);
+      position: relative;
+    }
+
+    footer::before, footer::after {
+      content: "★";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #ff4081;
+      font-size: 1.2rem;
+      opacity: 0.6;
+    }
+
+    footer::before {
+      left: 20px;
+    }
+
+    footer::after {
+      right: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Vanilla Unicorn</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="preco.html">Preçário</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="candidaturas.html" class="active">Candidata-te</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="formulario">
+    <h2>✨ Formulário de Candidatura ✨</h2>
+    <form id="formulario">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" required>
+
+      <label for="idade">Idade</label>
+      <input type="text" id="idade" required>
+
+      <label for="nif">NIF</label>
+      <input type="text" id="nif" required>
+
+      <label for="registo">Registo Criminal</label>
+      <input type="text" id="registo" required>
+
+      <label for="estado">Estado Civil</label>
+      <input type="text" id="estado" required>
+
+      <label for="discord">ID do Discord</label>
+      <input type="text" id="discord" required>
+
+      <!-- Perguntas 1 a 12 -->
+      <label for="pergunta1">1. Então... o que te traz ao Vanilla Unicorn? Falta de dinheiro ou paixão pelo espetáculo?</label>
+      <textarea id="pergunta1" required></textarea>
+
+      <label for="pergunta2">2. Sabes preparar bebidas ou vais precisar de aprender tudo atrás do balcão?</label>
+      <textarea id="pergunta2" required></textarea>
+
+      <label for="pergunta3">3. Estás preparado(a) para lidar com clientes bêbedos, chatos ou até agressivos?</label>
+      <textarea id="pergunta3" required></textarea>
+
+      <label for="pergunta4">4. Tens experiência a entreter clientes... ou vamos ter de te ensinar tudo do zero?</label>
+      <textarea id="pergunta4" required></textarea>
+
+      <label for="pergunta5">5. Se um cliente ultrapassar os limites, como reages?</label>
+      <textarea id="pergunta5" required></textarea>
+
+      <label for="pergunta6">6. Como agias se um membro da polícia ou gangue entra durante a atuação?</label>
+      <textarea id="pergunta6" required></textarea>
+
+      <label for="pergunta7">7. Estás confortável com o teu corpo como ferramenta de trabalho?</label>
+      <textarea id="pergunta7" required></textarea>
+
+      <label for="pergunta8">8. Ajudas uma colega em apuros com um cliente influente?</label>
+      <textarea id="pergunta8" required></textarea>
+
+      <label for="pergunta9">9. Como te comportas fora do trabalho ao representar o Vanilla Unicorn?</label>
+      <textarea id="pergunta9" required></textarea>
+
+      <label for="pergunta10">10. Como lidas com colegas que aceitam "pagamentos por fora"?</label>
+      <textarea id="pergunta10" required></textarea>
+
+      <label for="pergunta11">11. Descobres algo ilegal de um cliente... ficas em silêncio?</label>
+      <textarea id="pergunta11" required></textarea>
+
+      <label for="pergunta12">12. Há algo que recusas fazer, independentemente do valor?</label>
+      <textarea id="pergunta12" required></textarea>
+
+      <button type="submit">📩 Enviar Candidatura</button>
+    </form>
+    <p id="mensagem"></p>
+  </section>
+
+  <footer>
+     <p>&copy; 2025 Vanilla Unicorn Diamond RP. Todos os direitos reservados - SMURF OLIVEIRA &copy;</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

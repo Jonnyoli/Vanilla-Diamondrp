@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eventos - Vanilla Unicorn</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Mantém o footer no fundo */
+    html, body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    /* Evento estilizado */
+    section {
+      background: rgba(255, 255, 255, 0.05);
+      margin: 30px auto;
+      max-width: 800px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(255, 64, 129, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      text-align: center;
+      color: #ff4081;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #ff4081;
+    }
+
+    section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    section ul li {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      transition: transform 0.2s;
+    }
+
+    section ul li:hover {
+      transform: scale(1.03);
+      background: #ff4081;
+      color: #111;
+      font-weight: bold;
+    }
+
+    /* Footer glamoroso */
+    footer {
+      background: linear-gradient(to right, #111, #222);
+      padding: 20px;
+      text-align: center;
+      color: #ff4081;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+      box-shadow: 0 -2px 12px rgba(255, 64, 129, 0.3);
+      position: relative;
+    }
+
+    footer::before {
+      content: "★";
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #ff4081;
+      font-size: 1.2rem;
+      opacity: 0.6;
+    }
+
+    footer::after {
+      content: "★";
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #ff4081;
+      font-size: 1.2rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Vanilla Unicorn</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="preco.html">Preçário</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="candidaturas.html">Candidata-te</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="eventos.html" class="active">Eventos</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>🌟 Próximos Eventos 🌟</h2>
+      <ul>
+        <li class="neon-text">🎉 Sex. 27 - Noite Neon</li>
+        <li class="neon-text">🎧 Sáb. 28 - DJ convidado: DJ Lux</li>
+        <li class="neon-text">🥂 Dom. 39 - Sessão privada VIP</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+     <p>&copy; 2025 Vanilla Unicorn Diamond RP. Todos os direitos reservados - SMURF OLIVEIRA &copy;</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
